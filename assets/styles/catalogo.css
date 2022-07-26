@@ -10,6 +10,7 @@
 header {
     background-color: var(--grey);
     height: 7rem;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,24 +65,31 @@ header .loginBtn {
 
 main {
     display: flex;
+    justify-content: space-evenly;
 }
 
 /* Filtro */
 
 main .filter {
-    width: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin-top: 3rem;
     font-family: Lato;
     font-size: 12pt;
-    margin: 3rem;
 }
 
 main .filterOptions {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     width: 140px;
 }
 
 main .filterOption {
     cursor: pointer;
+    padding-left: 20%;
     font-weight: 900;
     margin-bottom: 0.8rem;
     padding-bottom: 0.3rem;
@@ -139,12 +147,13 @@ main .pretoCor {
 
 main .produtos {
     display: grid;
-    grid-template-columns: repeat(4, 18rem);
-    grid-template-rows: repeat(3, 20rem);
+    grid-template-columns: repeat(3, 18rem);
+    grid-template-rows: repeat(4, 20rem);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    width: 80%;
     margin-top: 3rem;
-    margin-left: 12rem;
+    /* margin-left: 8rem; */
     margin-bottom: 3rem;
 }
 
@@ -205,16 +214,17 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 7rem;
+    height: 10rem;
+    width: 100%;
     background-color: var(--grey);
     font-family: Lato, Arial;
 }
 
 footer .categoriasFooter{
     display: flex;
-    width: 40%;
+    width: 60%;
     margin-top: 1rem;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
