@@ -1,50 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/assets/style-login.css">
     <title>Login e Cadastro</title>
 </head>
+
 <body class="gradient-primary">
-    <div class="navbar">
-        <h1 class="navbar-h1">FASHIONISTA</h1>
-    </div>
-    <form class="container">
-        
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html"> <img src="./assets/img/fashionista.png" alt=""></a>
+        </div>
+    </nav>
+    <!-- navbar - fim -->
+
+    <!-- Já sou cadastrado -->
+    <form class="form-user">
+
         <div class="cont-1">
-        <h2 class="cont-h2">Quero me Cadastrar</h2>
+            <h2 class="cont-h2">Já sou cliente</h2>
+        </div>
+
+        <label class="form-group">CPF ou Email:</label>
+        <input class="form-control-user" type="text" name="f_nome" />
+
+        <label class="form-group">Senha:</label>
+        <input class="form-control-user" type="password" name="f_senha" />
+
+        <input class="form-control-lembrar" type="checkbox" name="f_lembrar" /> Lembrar <br><br>
+        <a href="#" class="form-senha">Esqueci minha senha</a>
+
+        <input class="form-control-bottom" type="submit" name="btn_enviar" value="ACESSAR CONTA" />
+
+    </form>
+    <!-- Já sou cadastrado -->
+
+    <!-- Quero em Cadastrar -->
+    <form class="form-container">
+
+        <div class="cont-1">
+            <h2 class="cont-h2">Quero me Cadastrar</h2>
         </div>
 
         <label class="form-label">Nome:</label>
-        <input class="form-control" type="text" name="f_nome"/>
+        <input class="form-control" type="text" name="f_nome" />
 
         <label class="form-label">Sobrenome:</label>
-        <input class="form-control" type="text" name="f_sobrenome"/>
+        <input class="form-control" type="text" name="f_sobrenome" />
 
         <label class="form-label">Email:</label>
-        <input class="form-control" type="email" name="f_email"/>
+        <input class="form-control" type="email" name="f_email" />
 
         <label class="form-label">Sexo:</label>
-        <input type="radio" name="sexo" value="Masculino"/> Masculino <br/>
-        <input type="radio" name="sexo" value="Feminino"/> Feminino <br/>
+        <input class="form-control" type="text" name="f_sexo" />
 
         <label class="form-label">Telefone:</label>
-        <input class="form-control" type="text" name="f_telefone"/>
+        <input class="form-control" type="text" name="f_telefone" />
 
         <label class="form-label">Nascimento:</label>
-        <input class="form-control" type="date" name="f_nascimento"/>
+        <input class="form-control" type="date" name="f_nascimento" />
 
         <label class="form-label">Senha:</label>
-        <input class="form-control" type="password" name="f_senha"/>
+        <input class="form-control" type="password" name="f_senha" />
 
         <label class="form-label">Repita a Senha:</label>
-        <input class="form-control" type="password" name="f_senha"/>
+        <input class="form-control" type="password" name="f_senha" />
 
-        <input class="form-control" type="submit" name="btn_enviar" value="CRIAR CONTA"/>
-                
+        <input class="form-control-bottom" type="submit" name="btn_enviar" value="CRIAR CONTA" />
 
     </form>
+    <!-- Quero em Cadastrar - Fim -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <span class="footer-text">FEMININO</span>
+            <span class="footer-text">MASCULINO</span>
+            <span class="footer-text">INFANTIL</span>
+            <span class="footer-text">PROMOÇÕES</span>
+            <span class="footer-text">SUPORTE</span> <br><br><br>
+            <span class="footer-text-2">© 2022 Fashionista. All Right Reserved</span>
+        </div>
+    </footer>
+
+    <!-- Footer-fim-->
+
 </body>
+
 </html>
