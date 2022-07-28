@@ -1,0 +1,287 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Lato&family=Poiret+One&display=swap');
+
+:root {
+    --grey: rgba(46, 46, 46, 1);
+}
+
+/* Header */
+
+header {
+    background-color: var(--grey);
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 4rem;
+    margin-left: 2rem;
+}
+
+/* Menu */
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    font-family: Lato, Arial;
+    font-weight: 600;
+    color: #fff;
+}
+
+header .navbar li {
+    margin: 1.5rem;
+    font-size: 12pt;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+header .navbar li:focus {
+    text-decoration: underline;
+}
+
+header .navbar li:hover {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+header .navicons {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+header .icon {
+    height: 1.8rem;
+    margin: 0.8rem;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+header .icon:hover {
+    opacity: 1;
+    transition: .1s ease-in-out;
+}
+
+header .loginBtn {
+    margin: 0.8rem;
+    padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+    cursor: pointer;
+    background: var(--grey);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+header .loginBtn:hover{
+    background-position: 100% 50%;
+    background: #fff;
+    color: var(--grey);
+    transition: color .2s ease;
+
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Filtro */
+
+main .filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin-top: 3rem;
+    font-family: Lato;
+    font-size: 12pt;
+}
+
+main .filterOptions {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 140px;
+}
+
+main .filterOption {
+    cursor: pointer;
+    padding-left: 20%;
+    font-weight: 900;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid rgba(46, 46, 46, 0.3);
+}
+
+main .filterOption:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+main .selectCorBox {
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    width: 140px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    opacity: 0.7;
+    text-align: left;
+}
+
+main .selectCorBox::after {
+    content: "▼";
+    font-size: 8pt;
+    margin-left: 4rem;
+}
+
+main .colorOptions {
+    text-align: center;
+    border-bottom: 1px solid rgba(46, 46, 46, 0.3);
+    padding-bottom: 0.8rem;
+}
+
+main .colorOption {
+    margin-top: 0.5rem;
+    font-weight: 400;
+    width: 140px;
+    cursor: pointer;
+}
+
+main .colorOption:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+main .colorOptionSelected {
+    margin-top: 0.4rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    width: 140px;
+    font-weight: 400;
+    background-color: var(--grey);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main .colorOptionSelected:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+/* Produtos */
+
+main .produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 18rem);
+    grid-template-rows: repeat(4, 20rem);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 80%;
+    margin-top: 3rem;
+    /* margin-left: 8rem; */
+    margin-bottom: 3rem;
+}
+
+/* Produto Individual */
+
+main .produtoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+main .produtoContainer:hover {
+    transform: scale(0.95);
+}
+
+main .produtoImg {
+    width: 15rem;
+    height: 14.375rem;
+    object-fit: cover;
+}
+
+/* Nota do Produto */
+
+main .ratingImg {
+    margin-top: 0.5rem;
+    margin-bottom: 0.6rem;
+    height: 14px;
+    width: 105px;
+}
+
+/* Nome do Produto */
+
+main .produtoNome {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+}
+
+/* Preço do Produto */
+
+main .precoContainer {
+    display: flex;
+}
+
+main .precoContainer .preco {
+    font-family: 'Lato', sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+main .precoContainer .precoAntigo {
+    opacity: 0.6;
+    text-decoration: line-through;
+    margin-right: 0.313rem;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10rem;
+    width: 100%;
+    background-color: var(--grey);
+    font-family: Lato, Arial;
+}
+
+footer .categoriasFooter {
+    display: flex;
+    width: 60%;
+    margin-top: 1rem;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+footer .categoriaFooter{
+    opacity: 0.8;
+}
+
+footer .categoriaFooter:hover{
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+footer .copyright {
+    color: #fff;
+    font-size: 10pt;
+    opacity: 0.6;
+    margin-top: 0.8rem;
+}
