@@ -265,3 +265,24 @@ i:hover{
     color: rgba(194, 10, 10, 0.2);
     margin-right:10px;
 }
+
+/* Melhores Ofertas */
+
+.melhoresOfertas{
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+}
+
+.cartao-produto .imagem-oferta {
+    max-width: 300px;
+    width: 100%;  
+    height: 400px;
+}
+
+.container-melhoresOfertas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    grid-gap: 30px; 
+}
