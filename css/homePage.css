@@ -201,3 +201,67 @@ i:hover{
     width: 100%;
     max-width: 254px;
 }
+
+/* Novidades */
+.container-novidade{
+    height: 100vh;
+    background-color: rgb(46, 46, 46);
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-novidade p{
+    margin: 81px 0;
+}
+
+.btn-aproveite{
+    padding: 19px 49px;
+    font-size: 12px;
+}
+
+.cartao-produto .imagem-produto{
+    max-width: 300px;
+    max-height: 450px;
+}
+
+.container-produto{
+    display: flex;
+}
+
+.cartao-produto{
+    position: relative;
+    margin-left: 30px;
+    transition: all 0.5s ease-in;
+}
+
+.cartao-produto:hover{
+    transform: scale(1.05);
+}
+
+.informacao-produto{
+    position: absolute;
+    top: 80%;
+    left: 0;
+    padding: 16px 28px;
+    text-align: left;
+    width: 100%;
+    max-width: 362px;
+    background-color: #fff;
+    color: #111;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Estou usando na seção de melhores ofertas e novidades*/
+
+.nome-produto{
+    margin: 10px 0;
+}
+
+.preco-antigo{
+    text-decoration: line-through;
+    color: rgba(194, 10, 10, 0.2);
+    margin-right:10px;
+}
