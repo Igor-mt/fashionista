@@ -144,3 +144,60 @@ i:hover{
     border-bottom-left-radius: 60px;
     margin: 10px 0;
 }
+
+/* Categoria */
+
+.titulo-section{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.75rem; 
+}
+
+.categorias{
+    height: 100vh;
+    padding: 119px 0;
+} 
+
+.container-titulo-descricao{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.container-titulo-descricao p{
+    padding-top: 20px;
+} 
+
+.container-categorias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.categoria{
+    margin-left: 30px;
+    position: relative;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+} 
+
+.categoria:hover{
+    transform: scale(1.1);
+}
+
+.categoria img {
+    height: 407px;
+    width: 326px;
+}
+
+.categoria span{
+    position: absolute;
+    font-weight: bolder;
+    top: 80%;
+    left: 10%;
+    z-index: 1;
+    background: #fff;
+    padding: 16px 50px;
+    text-align: center;
+    width: 100%;
+    max-width: 254px;
+}
