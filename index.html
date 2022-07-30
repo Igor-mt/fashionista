@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashionista</title>
     <link rel="stylesheet" href="./css/homePage.css">
+    <link rel="stylesheet" href="./css/mobile-homePage.css">
 </head>
 <body>
     <header>
@@ -36,6 +37,27 @@
                 </button>
 
             </div>  
+
+            <!-- Menu Mobile -->
+
+            <div id="menuNav" class="overlay">
+                <a href="javascript:void(0)" class="btn-close" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+
+                <div class="container-overlay">
+                    <ul class="navbar-items menu-mobile">
+                        <li class="navbar-item"><a href="#">FEMININO</a></li>
+                        <li class="navbar-item"><a href="#">MASCULINO</a></li>
+                        <li class="navbar-item"><a href="#">INFANTIL</a></li>
+                        <li class="navbar-item"><a href="#">PROMOÇÕES</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Botão hamburguer  -->
+            <button class="btn-nav" id="btn-nav" onclick="openNav()">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </button> 
+
         </div>
     </header>
 
@@ -231,6 +253,10 @@
             <p>&copy;2022 Fashionista.All Right Reserved</p>
         </div>
     </footer>
-    
+
+    <script src="./script/mobile-navbar.js"></script>
+
+    <script src="https://kit.fontawesome.com/06fd78b9bc.js" crossorigin="anonymous"></script> <!-- Fonte Awesome  -->
+
 </body>
 </html>
