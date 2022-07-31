@@ -1,0 +1,441 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Lato&family=Poiret+One&display=swap');
+
+/* Header */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+i:hover {
+    color: #f9004d;
+}
+
+.logo {
+    margin-left: 1rem;
+    max-height: 63px;
+    height: 100%;
+    max-width: 236px;
+    width: 100%;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(46, 46, 46);
+    height: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+header .navbar-items {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+}
+
+.navbar-items li {
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.navbar-items li:hover {
+    color: #f9004d;
+}
+
+.btn-login {
+    padding: 8px 20px;
+    font-size: 12px;
+}
+
+.btn-imagem {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn-imagem img {
+    width: 26px;
+    height: 28px;
+}
+
+.btn-imagem:hover {
+    transform: scale(1.05);
+}
+
+.btn-branco {
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 3px;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.btn-branco:hover {
+    background-color: #f9004d;
+}
+
+.container-button {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.container-button button {
+    margin-left: 15px;
+}
+
+@media (max-width: 500px) {
+
+    /* Menu responsivo */
+    .navbar-items.menu-mobile li {
+        font-size: 1.2rem;
+    }
+
+    .btn-close {
+        font-size: 1.81rem;
+    }
+}
+
+/* Menu responsivo */
+.overlay {
+    width: 100%;
+    height: 0;
+    background-color: rgb(0, 0, 0, 0.9);
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.container-overlay {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-items.menu-mobile {
+    display: block;
+}
+
+.navbar-items.menu-mobile li {
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+}
+
+.btn-close {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    padding: 20px 8px;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.btn-nav {
+    display: none;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #111;
+    margin: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 940px) {
+
+    /* Menu responsivo */
+    .btn-nav {
+        display: block;
+    }
+
+    .navbar-items.menu {
+        display: none;
+    }
+}
+
+/* Desktop Version */
+
+@media (min-width: 1024px) {
+    main {
+        height: 100vh;
+    }
+
+    .productContainer {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        height: 100%;
+        width: 100%;
+    }
+
+    .productImageContainer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+    }
+
+    .productImage {
+        height: 90%;
+    }
+
+    .productDetailsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        padding-top: 4%;
+        gap: 0.5rem;
+    }
+
+    .productName {
+        font-family: 'Frank Ruhl Libre', serif;
+        text-transform: uppercase;
+        font-size: 18pt;
+        font-weight: bold;
+    }
+
+    .productPrice {
+        display: flex;
+        gap: 0.4rem;
+    }
+
+    .price {
+        font-family: 'Lato', sans-serif;
+        font-weight: 800;
+    }
+
+    .installments {
+        font-weight: 600;
+        opacity: 0.7
+    }
+
+    .sizeContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .sizeText {
+        font-family: 'Lato', sans-serif;
+        opacity: 0.6;
+        font-size: 13pt;
+    }
+
+    .sizeOptions {
+        display: flex;
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+
+    .sizeOption {
+        font-family: 'Lato', sans-serif;
+        font-size: 12pt;
+        background-color: inherit;
+        font-weight: bold;
+        border: 1px solid rgba(46, 46, 46, 0.3);
+        padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+    .sizeOption:hover {
+        transform: scale(1.07);
+    }
+
+    .addProduct {
+        background-color: rgba(46, 46, 46, 1);
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-size: 12pt;
+        font-weight: 600;
+        border: none;
+        width: 35%;
+        padding: 0.8rem;
+        border-radius: 6px;
+        box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
+        margin-top: 0.5rem;
+        cursor: pointer;
+    }
+
+    .addProduct:hover {
+        transform: scale(1.04);
+        transition: transform 0.2s ease-in-out;
+        box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Mobile Version */
+
+@media (max-width: 1024px) {
+    .productContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .productImageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .productImage {
+        width: 85vw;
+        object-fit: contain;
+    }
+
+    .productDetailsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 85vw;
+        gap: 0.3rem;
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .productName {
+        font-family: 'Frank Ruhl Libre', serif;
+        text-transform: uppercase;
+        font-size: 16pt;
+        font-weight: bold;
+    }
+
+    .productPrice {
+        display: flex;
+        gap: 0.3rem;
+    }
+
+    .price {
+        font-family: 'Lato', sans-serif;
+        font-weight: 800;
+    }
+
+    .installments {
+        font-weight: 600;
+        opacity: 0.7
+    }
+
+    .sizeContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .sizeText {
+        font-family: 'Lato', sans-serif;
+        opacity: 0.6;
+        font-size: 13pt;
+    }
+
+    .sizeOptions {
+        display: flex;
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+
+    .sizeOption {
+        font-family: 'Lato', sans-serif;
+        font-size: 12pt;
+        background-color: inherit;
+        font-weight: bold;
+        border: 1px solid rgba(46, 46, 46, 0.3);
+        padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+    .sizeOption:hover {
+        transform: scale(1.07);
+    }
+
+    .addProduct {
+        background-color: rgba(46, 46, 46, 1);
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-size: 12pt;
+        font-weight: 600;
+        border: none;
+        width: 60%;
+        padding: 0.8rem;
+        border-radius: 6px;
+        box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
+        margin-top: 0.5rem;
+    }
+
+    .addProduct:hover {
+        transform: scale(1.04);
+        transition: transform 0.2s ease-in-out;
+        box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
+    }
+}
+
+.sizeOption:active, .sizeOption:focus{
+    background-color: #f9004d;
+    color: #fff;
+}
+
+.addProduct:focus{
+    background-color: #f9004d;
+    color: #fff;
+}
+
+/* Footer */
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    height: 150px;
+    background-color: rgb(46, 46, 46);
+    width: 100%;
+}
+
+.container-footer .nav{
+    width: 100%;
+}
+
+.container-footer .navbar-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.container-footer .navbar-item{
+    padding: 0.3rem;
+}
+
+.container-footer p {
+    color: #fff;
+    font-size: 8px;
+}
