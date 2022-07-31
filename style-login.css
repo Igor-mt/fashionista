@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --grey: rgba(46, 46, 46, 1);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+i:hover {
+  color: #f9004d;
+}
+
+.logo {
+  max-height: 63px;
+  height: 100%;
+  max-width: 236px;
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(46, 46, 46);
+  height: 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-items {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-items li {
+  margin-left: 30px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.navbar-items li:hover {
+  color: #f9004d;
+}
+
+.btn-login {
+  padding: 8px 20px;
+  font-size: 12px;
+}
+
+.btn-imagem {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn-imagem img {
+  width: 26px;
+  height: 28px;
+}
+
+.btn-imagem:hover {
+  transform: scale(1.05);
+}
+
+.btn-branco {
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 3px;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.btn-branco:hover {
+  background-color: #f9004d;
+}
+
+.container-button {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.container-button button {
+  margin-left: 15px;
+}
+
+/* Forms */
+.container-main {
+  margin-top: 8rem;
+  width: 100%;
+  text-align: center;
+}
+
+.cont-h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
+}
+
+.form-group {
+  width: 65vw;
+  display: block;
+}
+
+.form-control-user {
+  width: 30vw;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-size: 5;
+  border-radius: 5px;
+}
+
+.form-senha {
+  text-align: center;
+}
+
+.form-control-lembrar {
+  width: 65vw;
+  display: block;
+  margin-top: 10px;
+}
+
+.form-label {
+  width: 65vw;
+  display: block;
+}
+
+.form-control {
+  width: 30vw;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-size: 5;
+  border-radius: 5px;
+}
+
+.form-control-bottom {
+  width: 50vw;
+  margin-top: 10px;
+  margin-bottom: 3rem;
+  align-items: center;
+  padding: 10px;
+  font-size: 1;
+  background-color: var(--grey);
+  color: white;
+  border-radius: 3px;
+}
+
+/* Footer */
+
+.container-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 150px;
+  background-color: rgb(46, 46, 46);
+  width: 100%;
+}
+
+.container-footer .navbar-items {
+  flex-wrap: wrap;
+  padding: 32px 0;
+}
+
+.container-footer p {
+  color: #fff;
+  font-size: 8px;
+}
+
+/* Estilo Login e Cadastro */
+
+@media (min-width: 900px) {
+}
