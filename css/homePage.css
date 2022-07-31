@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+i:hover{
+    color:#f9004d;
+}
+
+.logo{
+    max-height: 63px;
+    height: 100%;
+    max-width: 236px;
+    width: 100%;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(46, 46, 46);
+    height: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-items{
+    display: flex;
+    list-style: none;
+}
+
+.navbar-items li{
+    margin-left: 30px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.navbar-items li:hover{
+    color: #f9004d;
+}
+
+.btn-login{
+    padding: 8px 20px;
+    font-size: 12px;
+}
+
+.btn-imagem{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn-imagem img{
+    width: 26px;
+    height: 28px;
+}
+
+.btn-imagem:hover{
+    transform: scale(1.05);
+}
+
+.btn-branco{
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 3px;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.btn-branco:hover{
+    background-color:#f9004d;
+}
+
+.container-button{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.container-button button{
+    margin-left: 15px;
+}
+
+/* HOME */
+
+.container-home{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #E6E6E6;
+}
+
+.container-texto-home h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    line-height: 76px;
+    margin-bottom: 20px;
+}
+
+.container-texto-home p{
+    line-height: 30px;
+    color: #111;
+}
+
+.container-texto-home a{
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 15px 50px;
+    margin: 10px 5px;
+    background: #111;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.container-texto-home a:hover{
+    transform: scale(1.05);
+}
+
+.container-imagem-home img{
+    max-height: 606px;
+    height: 100%;
+    max-width: 500px;
+    width: 100%;
+    border-bottom-left-radius: 60px;
+    margin: 10px 0;
+}
+
+/* Categoria */
+
+.titulo-section{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.75rem; 
+}
+
+.categorias{
+    height: 100vh;
+    padding: 119px 0;
+} 
+
+.container-titulo-descricao{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.container-titulo-descricao p{
+    padding-top: 20px;
+} 
+
+.container-categorias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.categoria{
+    margin-left: 30px;
+    position: relative;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+} 
+
+.categoria:hover{
+    transform: scale(1.1);
+}
+
+.categoria img {
+    height: 407px;
+    width: 326px;
+}
+
+.categoria span{
+    position: absolute;
+    font-weight: bolder;
+    top: 80%;
+    left: 10%;
+    z-index: 1;
+    background: #fff;
+    padding: 16px 50px;
+    text-align: center;
+    width: 100%;
+    max-width: 254px;
+}
+
+/* Novidades */
+.container-novidade{
+    height: 100vh;
+    background-color: rgb(46, 46, 46);
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-novidade p{
+    margin: 81px 0;
+}
+
+.btn-aproveite{
+    padding: 19px 49px;
+    font-size: 12px;
+}
+
+.cartao-produto .imagem-produto{
+    max-width: 300px;
+    max-height: 450px;
+}
+
+.container-produto{
+    display: flex;
+}
+
+.cartao-produto{
+    position: relative;
+    margin-left: 30px;
+    transition: all 0.5s ease-in;
+}
+
+.cartao-produto:hover{
+    transform: scale(1.05);
+}
+
+.informacao-produto{
+    position: absolute;
+    top: 80%;
+    left: 0;
+    padding: 16px 28px;
+    text-align: left;
+    width: 100%;
+    max-width: 362px;
+    background-color: #fff;
+    color: #111;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Estou usando na seção de melhores ofertas e novidades*/
+
+.nome-produto{
+    margin: 10px 0;
+}
+
+.preco-antigo{
+    text-decoration: line-through;
+    color: rgba(194, 10, 10, 0.2);
+    margin-right:10px;
+}
+
+/* Melhores Ofertas */
+
+.melhoresOfertas{
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+}
+
+.cartao-produto .imagem-oferta {
+    max-width: 300px;
+    width: 100%;  
+    height: 400px;
+}
+
+.container-melhoresOfertas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    grid-gap: 30px; 
+}
+
+/* footer */
+
+.container-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+    background-color: rgb(46, 46, 46);
+    width: 100%;
+}
+
+.container-footer .navbar-items{
+    flex-wrap: wrap;
+    padding: 32px 0;
+}
+
+.container-footer  p{
+    color: #fff;
+    font-size: 8px;
+}
+
+/* Menu responsivo */
+.overlay{
+    width: 100%;
+    height: 0;
+    background-color: rgb(0, 0, 0, 0.9);
+    z-index: 9; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.container-overlay{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-items.menu-mobile{
+    display: block;
+}
+
+.navbar-items.menu-mobile li{
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+}
+
+.btn-close{
+    position: absolute;
+    top: 0;
+    right: 10%;
+    padding: 20px 8px;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.btn-nav{
+    display: none;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #111;
+    margin: 8px;
+    color: #fff;
+    cursor: pointer;
+}

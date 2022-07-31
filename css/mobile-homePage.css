@@ -1,0 +1,90 @@
+@media (max-width: 500px){
+    /* Menu responsivo */
+    .navbar-items.menu-mobile li{
+        font-size: 1.2rem;
+    }
+    .btn-close{
+        font-size: 1.81rem;
+    }
+    
+    /*HOME*/
+    .container-imagem-home img {
+        max-height: 481px;
+        max-width: 434px;
+    }
+
+    .container-texto-home h1 {
+        font-size: 4rem;
+    }
+
+    .container-texto-home p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 940px){
+    /* Menu responsivo */
+    .btn-nav{
+        display: block;
+    }
+
+    .navbar-items.menu{
+        display: none;
+    }
+    
+    /*HOME*/
+
+    .container-home{
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .container-texto-home{
+        padding-top: 150px;
+    }
+
+}
+
+/* Melhores ofertas */
+@media (max-width: 1518px){
+
+    .container-melhoresOfertas{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 1210px){
+        .container-melhoresOfertas{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 817px){
+        .container-melhoresOfertas{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+@media (max-width: 1115px){
+    
+    /*Categoria */ 
+
+    .categorias{
+        height: 100%;
+    }
+
+    .container-categorias{
+        flex-wrap: wrap;
+    }
+
+    .container-novidade{
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .container-produto{
+        flex-direction: column;
+        padding: 46px 0;
+        gap: 80px;
+    }
+}   

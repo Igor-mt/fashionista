@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashionista</title>
+    <link rel="stylesheet" href="./css/homePage.css">
+    <link rel="stylesheet" href="./css/mobile-homePage.css">
+</head>
+<body>
+    <header>
+        <div class="navbar-container">
+            <a href="#home"><img src="./assets/img/logo-fashionista.png" class="logo" alt="logo fashionista"></a>
+
+            <nav>
+                <ul class="navbar-items menu">
+                    <li class="navbar-item"><a href="#">FEMININO</a></li>
+                    <li class="navbar-item"><a href="#">MASCULINO</a></li>
+                    <li class="navbar-item"><a href="#">INFANTIL</a></li>
+                    <li class="navbar-item"><a href="#">PROMOÇÕES</a></li>
+                </ul>
+            </nav>  
+
+            <div class="container-button">
+
+                <button class="btn-imagem" id="btn-pesquisa">
+                    <img src="./assets/icons/search-icon.svg" alt="pesquisa">
+                </button>
+
+                <button class="btn-imagem" id="btn-sacola">
+                    <img src="./assets/icons/cart-icon.svg" alt="sacola">
+                </button>
+
+                <button class="btn-branco btn-login" id="btn-login">
+                    LOGIN
+                </button>
+
+            </div> 
+
+            <!-- Menu Mobile -->
+
+            <div id="menuNav" class="overlay">
+                <a href="javascript:void(0)" class="btn-close" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+
+                <div class="container-overlay">
+                    <ul class="navbar-items menu-mobile">
+                        <li class="navbar-item"><a href="#">FEMININO</a></li>
+                        <li class="navbar-item"><a href="#">MASCULINO</a></li>
+                        <li class="navbar-item"><a href="#">INFANTIL</a></li>
+                        <li class="navbar-item"><a href="#">PROMOÇÕES</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Botão hamburguer  -->
+            <button class="btn-nav" id="btn-nav" onclick="openNav()">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </button> 
+
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container-home">
+            <div class="container-texto-home">
+                <h1>Encontre o <br> melhor da <br>moda</h1>
+                <p>Aqui você encontra roupas femininas, moda <br>
+                    infantil, moda masculina e muito mais. Confira <br> 
+                    as promoções e aproveite!
+                </p>
+                <a href="#melhoresOfertas">Melhores Ofertas</a>
+            </div>
+
+            <div class="container-imagem-home">
+                <img src="./assets/img/feminino/19.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section id="categorias" class="categorias">
+
+        <div class="container-titulo-descricao">
+            <h1 class="titulo-section">Categorias</h1>
+            <p>Moda feminina, masculina e infantil! Confira nossas promoções e aproveite!</p>
+        </div>
+
+        <div class="container-categorias">
+
+            <div class="categoria">
+                <a href="#"><img src="./assets/img/feminino/17.jpg" alt=""></a>
+                <span class="nome-categoria">
+                    MODA FEMININA
+                </span>
+            </div>
+
+            <div class="categoria">
+                <a href="#"><img src="./assets/img/masculino/05.jpg" alt=""></a>
+                <span class="nome-categoria">
+                    MODA MASCULINA
+                </span>
+            </div>
+
+            <div class="categoria">
+                <a href="#"><img src="./assets/img/infantil/07.jpg" alt=""></a>
+                <span class="nome-categoria">
+                    MODA INFANTIL
+                </span>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="novidades">
+        <div class="container-novidade">
+            <div class="container-titulo-descricao">
+                <h1 class="titulo-section">Novidades</h1>
+                <p>As melhores novidades no mundo <br> da moda!</p>
+                <button class="btn-branco btn-aproveite">APROVEITE</button>
+            </div>
+
+            <div class="container-produto">
+
+                <div class="cartao-produto">
+                    <img src="./assets/img/promocoes/04.jpg" class="imagem-produto">
+                    <div class="informacao-produto">
+                        <div class="avaliacao-produto"><img src="./assets/icons/Rating.png"></div>
+                        <div class="nome-produto">Pastel Long Sleeve</div>
+                        <span class="preco-antigo">R$220</span>
+                        <span class="preco-atual">R$140</span>
+                    </div>
+                </div>
+
+                <div class="cartao-produto">
+                    <img src="./assets/img/masculino/17.jpg" class="imagem-produto">
+                    <div class="informacao-produto">
+                        <div class="avaliacao-produto"><img src="./assets/icons/Rating.png"></div>
+                        <div class="nome-produto">Pastel Long Sleeve</div>
+                        <span class="preco-antigo">R$220</span>
+                        <span class="preco-atual">R$140</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="melhoresOfertas" id="melhoresOfertas">
+
+        <div class="container-titulo-descricao">
+            <h1 class="titulo-section">Melhores Ofertas</h1>
+            <p>Confira nossas ofertas e promoções, aproveite!</p>    
+        </div>
+
+        <div class="container-melhoresOfertas">
+
+           <div class="cartao-produto"> 
+                <img src="./assets/img/promocoes/01.jpg" class="imagem-oferta">
+                <div class="informacao-oferta">
+                    <div class="avaliacao-produto"><img src="./assets/icons/Rating.png"></div>
+                    <div class="nome-produto">Pastel Long Sleeve</div>
+                    <span class="preco-antigo">R$220</span>
+                    <span class="preco-atual">R$140</span>
+                </div>
+           </div>
+
+           <div class="cartao-produto"> 
+                <img src="./assets/img/promocoes/02.jpg" class="imagem-oferta">
+                <div class="informacao-oferta">
+                    <div class="avaliacao-produto"><img src="./assets/icons/Rating.png"></div>
+                    <div class="nome-produto">Pastel Long Sleeve</div>
+                    <span class="preco-antigo">R$220</span>
+                    <span class="preco-atual">R$140</span>
+                </div>
+           </div>
+
+           <div class="cartao-produto"> 
+                <img src="./assets/img/promocoes/03.jpg" class="imagem-oferta">
+                <div class="informacao-oferta">
+                    <div class="avaliacao-produto"><img src="./assets/icons/Rating.png"></div>
+                    <div class="nome-produto">Pastel Long Sleeve</div>
+                    <span class="preco-antigo">R$220</span>
+                    <span class="preco-atual">R$140</span>
+                </div>
+           </div>
+
+           <div class="cartao-produto"> 
+                <img src="./assets/img/promocoes/04.jpg" class="imagem-oferta">
+                <div class="informacao-oferta">
+                    <div class="avaliacao-produto"><img src="./assets/icons/Rating.png"></div>
+                    <div class="nome-produto">Pastel Long Sleeve</div>
+                    <span class="preco-antigo">R$220</span>
+                    <span class="preco-atual">R$140</span>
+                </div>
+           </div>
+
+           <div class="cartao-produto"> 
+                <img src="./assets/img/promocoes/06.jpg" class="imagem-oferta">
+                <div class="informacao-oferta">
+                    <div class="avaliacao-produto"><img src="./assets/icons/Rating.png"></div>
+                    <div class="nome-produto">Pastel Long Sleeve</div>
+                    <span class="preco-antigo">R$220</span>
+                    <span class="preco-atual">R$140</span>
+                </div>
+           </div>
+
+           <div class="cartao-produto"> 
+                <img src="./assets/img/promocoes/07.jpg" class="imagem-oferta">
+                <div class="informacao-oferta">
+                    <div class="avaliacao-produto"><img src="./assets/icons/Rating.png"></div>
+                    <div class="nome-produto">Pastel Long Sleeve</div>
+                    <span class="preco-antigo">R$220</span>
+                    <span class="preco-atual">R$140</span>
+                </div>
+           </div>
+
+           <div class="cartao-produto"> 
+                <img src="./assets/img/promocoes/08.jpg" class="imagem-oferta">
+                <div class="informacao-oferta">
+                    <div class="avaliacao-produto"><img src="./assets/icons/Rating.png"></div>
+                    <div class="nome-produto">Pastel Long Sleeve</div>
+                    <span class="preco-antigo">R$220</span>
+                    <span class="preco-atual">R$140</span>
+                </div>
+           </div>
+
+           <div class="cartao-produto"> 
+                <img src="./assets/img/promocoes/09.jpg" class="imagem-oferta">
+                <div class="informacao-oferta">
+                    <div class="avaliacao-produto"><img src="./assets/icons/Rating.png"></div>
+                    <div class="nome-produto">Pastel Long Sleeve</div>
+                    <span class="preco-antigo">R$220</span>
+                    <span class="preco-atual">R$140</span>
+                </div>
+           </div>
+
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="container-footer">         
+            <nav>
+                <ul class="navbar-items">
+                    <li class="navbar-item"><a href="#">FEMININO</a></li>
+                    <li class="navbar-item"><a href="#">MASCULINO</a></li>
+                    <li class="navbar-item"><a href="#">INFANTIL</a></li>
+                    <li class="navbar-item"><a href="#">PROMOÇÕES</a></li>
+                    <li class="navbar-item"><a href="#">SUPORTE</a></li>
+                </ul>
+            </nav>  
+
+            <p>&copy;2022 Fashionista.All Right Reserved</p>
+        </div>
+    </footer>
+
+    <script src="./script/mobile-navbar.js"></script>
+
+    <script src="https://kit.fontawesome.com/06fd78b9bc.js" crossorigin="anonymous"></script> <!-- Fonte Awesome  -->
+
+</body>
+</html>
