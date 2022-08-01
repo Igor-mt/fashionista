@@ -12,17 +12,55 @@
 
 <body>
     <header>
-        <img src="../assets/img/logo-fashionista.png" alt="logo fashionista" class="logo">
-        <ul class="navbar">
-            <li class="navitem">FEMININO</li>
-            <li class="navitem">MASCULINO</li>
-            <li class="navitem">INFANTIL</li>
-            <li class="navitem">PROMOÇÕES</li>
-        </ul>
-        <div class="navicons">
-            <img src="../assets/icons/search-icon.svg" alt="Search Icon" class="searchIcon icon">
-            <img src="../assets/icons/cart-icon.svg" alt="Cart icon" class="cartIcon icon">
-            <button class="loginBtn">LOGIN</button>
+        <div class="navbar-container">
+            <a href="./index.html"><img src="./assets/img/logo-fashionista.png" class="logo" alt="logo fashionista"></a>
+
+            <nav>
+                <ul class="navbar-items menu">
+                    <li class="navbar-item"><a href="#">FEMININO</a></li>
+                    <li class="navbar-item"><a href="#">MASCULINO</a></li>
+                    <li class="navbar-item"><a href="#">INFANTIL</a></li>
+                    <li class="navbar-item"><a href="#">PROMOÇÕES</a></li>
+                </ul>
+            </nav>
+
+            <div class="container-button">
+
+                <button class="btn-imagem" id="btn-pesquisa">
+                    <img src="./assets/icons/search-icon.svg" alt="pesquisa">
+                </button>
+
+                <button class="btn-imagem" id="btn-sacola">
+                    <img src="./assets/icons/cart-icon.svg" alt="sacola">
+                </button>
+
+                <button class="btn-branco btn-login" id="btn-login">
+                    LOGIN
+                </button>
+
+            </div>
+
+            <!-- Menu Mobile -->
+
+            <div id="menuNav" class="overlay">
+                <a href="javascript:void(0)" class="btn-close" onclick="closeNav()"><i
+                        class="fa-solid fa-xmark"></i></a>
+
+                <div class="container-overlay">
+                    <ul class="navbar-items menu-mobile">
+                        <li class="navbar-item"><a href="#">FEMININO</a></li>
+                        <li class="navbar-item"><a href="#">MASCULINO</a></li>
+                        <li class="navbar-item"><a href="#">INFANTIL</a></li>
+                        <li class="navbar-item"><a href="#">PROMOÇÕES</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Botão hamburguer  -->
+            <button class="btn-nav" id="btn-nav" onclick="openNav()">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </button>
+
         </div>
     </header>
     <main>
@@ -41,132 +79,137 @@
                     <section class="vermelhoCor colorOption nonSelected">Vermelho</section>
                     <section class="pretoCor colorOption nonSelected">Preto</section>
                 </div>
-
             </div>
         </div>
-        <div class="produtos">
-            <div class="produtoContainer">
-                <img src="../assets/img/feminino/02.jpg" alt="Pastel Long Sleeve" class="produtoImg">
-                <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
-                <section class="produtoNome">Pastel Long Sleeve</section>
-                <div class="precoContainer">
-                    <section class="precoAntigo preco">$220</section>
-                    <section class="precoNovo preco">$140</section>
+            <div class="produtos">
+                <div class="produtoContainer">
+                    <img src="../assets/img/feminino/02.jpg" alt="Pastel Long Sleeve" class="produtoImg">
+                    <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
+                    <section class="produtoNome">Pastel Long Sleeve</section>
+                    <div class="precoContainer">
+                        <section class="precoAntigo preco">$220</section>
+                        <section class="precoNovo preco">$140</section>
+                    </div>
                 </div>
-            </div>
-            <div class="produtoContainer">
-                <img src="../assets/img/feminino/03.jpg" alt="Pastel Long Sleeve" class="produtoImg">
-                <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
-                <section class="produtoNome">Hoodie Long Sleeve</section>
-                <div class="precoContainer">
-                    <section class="precoAntigo preco">$220</section>
-                    <section class="precoNovo preco">$140</section>
+                <div class="produtoContainer">
+                    <img src="../assets/img/feminino/03.jpg" alt="Pastel Long Sleeve" class="produtoImg">
+                    <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
+                    <section class="produtoNome">Hoodie Long Sleeve</section>
+                    <div class="precoContainer">
+                        <section class="precoAntigo preco">$220</section>
+                        <section class="precoNovo preco">$140</section>
+                    </div>
                 </div>
-            </div>
-            <div class="produtoContainer">
-                <img src="../assets/img/feminino/04.jpg" alt="Pastel Long Sleeve" class="produtoImg">
-                <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
-                <section class="produtoNome">Casual Long Sleeve</section>
-                <div class="precoContainer">
-                    <section class="precoAntigo preco">$220</section>
-                    <section class="precoNovo preco">$140</section>
+                <div class="produtoContainer">
+                    <img src="../assets/img/feminino/04.jpg" alt="Pastel Long Sleeve" class="produtoImg">
+                    <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
+                    <section class="produtoNome">Casual Long Sleeve</section>
+                    <div class="precoContainer">
+                        <section class="precoAntigo preco">$220</section>
+                        <section class="precoNovo preco">$140</section>
+                    </div>
                 </div>
-            </div>
-            <div class="produtoContainer">
-                <img src="../assets/img/feminino/06.jpg" alt="Pastel Long Sleeve" class="produtoImg">
-                <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
-                <section class="produtoNome">Hoodiee Long Sleeve</section>
-                <div class="precoContainer">
-                    <section class="precoAntigo preco">$220</section>
-                    <section class="precoNovo preco">$140</section>
+                <div class="produtoContainer">
+                    <img src="../assets/img/feminino/06.jpg" alt="Pastel Long Sleeve" class="produtoImg">
+                    <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
+                    <section class="produtoNome">Hoodiee Long Sleeve</section>
+                    <div class="precoContainer">
+                        <section class="precoAntigo preco">$220</section>
+                        <section class="precoNovo preco">$140</section>
+                    </div>
                 </div>
-            </div>
-            <div class="produtoContainer">
-                <img src="../assets/img/feminino/07.jpg" alt="Pastel Long Sleeve" class="produtoImg">
-                <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
-                <section class="produtoNome">Casual Long Sleeve</section>
-                <div class="precoContainer">
-                    <section class="precoAntigo preco">$220</section>
-                    <section class="precoNovo preco">$140</section>
+                <div class="produtoContainer">
+                    <img src="../assets/img/feminino/07.jpg" alt="Pastel Long Sleeve" class="produtoImg">
+                    <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
+                    <section class="produtoNome">Casual Long Sleeve</section>
+                    <div class="precoContainer">
+                        <section class="precoAntigo preco">$220</section>
+                        <section class="precoNovo preco">$140</section>
+                    </div>
                 </div>
-            </div>
-            <div class="produtoContainer">
-                <img src="../assets/img/feminino/08.jpg" alt="Pastel Long Sleeve" class="produtoImg">
-                <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
-                <section class="produtoNome">Pastel Long Sleeve</section>
-                <div class="precoContainer">
-                    <section class="precoAntigo preco">$220</section>
-                    <section class="precoNovo preco">$140</section>
+                <div class="produtoContainer">
+                    <img src="../assets/img/feminino/08.jpg" alt="Pastel Long Sleeve" class="produtoImg">
+                    <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
+                    <section class="produtoNome">Pastel Long Sleeve</section>
+                    <div class="precoContainer">
+                        <section class="precoAntigo preco">$220</section>
+                        <section class="precoNovo preco">$140</section>
+                    </div>
                 </div>
-            </div>
-            <div class="produtoContainer">
-                <img src="../assets/img/feminino/10.jpg" alt="Pastel Long Sleeve" class="produtoImg">
-                <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
-                <section class="produtoNome">Hoodiee Long Sleeve</section>
-                <div class="precoContainer">
-                    <section class="precoAntigo preco">$220</section>
-                    <section class="precoNovo preco">$140</section>
+                <div class="produtoContainer">
+                    <img src="../assets/img/feminino/10.jpg" alt="Pastel Long Sleeve" class="produtoImg">
+                    <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
+                    <section class="produtoNome">Hoodiee Long Sleeve</section>
+                    <div class="precoContainer">
+                        <section class="precoAntigo preco">$220</section>
+                        <section class="precoNovo preco">$140</section>
+                    </div>
                 </div>
-            </div>
-            <div class="produtoContainer">
-                <img src="../assets/img/feminino/16.jpg" alt="Pastel Long Sleeve" class="produtoImg">
-                <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
-                <section class="produtoNome">Casual Long Sleeve</section>
-                <div class="precoContainer">
-                    <section class="precoAntigo preco">$220</section>
-                    <section class="precoNovo preco">$140</section>
+                <div class="produtoContainer">
+                    <img src="../assets/img/feminino/16.jpg" alt="Pastel Long Sleeve" class="produtoImg">
+                    <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
+                    <section class="produtoNome">Casual Long Sleeve</section>
+                    <div class="precoContainer">
+                        <section class="precoAntigo preco">$220</section>
+                        <section class="precoNovo preco">$140</section>
+                    </div>
                 </div>
-            </div>
-            <div class="produtoContainer">
-                <img src="../assets/img/feminino/11.jpg" alt="Pastel Long Sleeve" class="produtoImg">
-                <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
-                <section class="produtoNome">Casual Long Sleeve</section>
-                <div class="precoContainer">
-                    <section class="precoAntigo preco">$220</section>
-                    <section class="precoNovo preco">$140</section>
+                <div class="produtoContainer">
+                    <img src="../assets/img/feminino/11.jpg" alt="Pastel Long Sleeve" class="produtoImg">
+                    <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
+                    <section class="produtoNome">Casual Long Sleeve</section>
+                    <div class="precoContainer">
+                        <section class="precoAntigo preco">$220</section>
+                        <section class="precoNovo preco">$140</section>
+                    </div>
                 </div>
-            </div>
-            <div class="produtoContainer">
-                <img src="../assets/img/feminino/12.jpg" alt="Pastel Long Sleeve" class="produtoImg">
-                <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
-                <section class="produtoNome">Pastel Long Sleeve</section>
-                <div class="precoContainer">
-                    <section class="precoAntigo preco">$220</section>
-                    <section class="precoNovo preco">$140</section>
+                <div class="produtoContainer">
+                    <img src="../assets/img/feminino/12.jpg" alt="Pastel Long Sleeve" class="produtoImg">
+                    <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
+                    <section class="produtoNome">Pastel Long Sleeve</section>
+                    <div class="precoContainer">
+                        <section class="precoAntigo preco">$220</section>
+                        <section class="precoNovo preco">$140</section>
+                    </div>
                 </div>
-            </div>
-            <div class="produtoContainer">
-                <img src="../assets/img/feminino/14.jpg" alt="Pastel Long Sleeve" class="produtoImg">
-                <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
-                <section class="produtoNome">Hoodiee Long Sleeve</section>
-                <div class="precoContainer">
-                    <section class="precoAntigo preco">$220</section>
-                    <section class="precoNovo preco">$140</section>
+                <div class="produtoContainer">
+                    <img src="../assets/img/feminino/14.jpg" alt="Pastel Long Sleeve" class="produtoImg">
+                    <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
+                    <section class="produtoNome">Hoodiee Long Sleeve</section>
+                    <div class="precoContainer">
+                        <section class="precoAntigo preco">$220</section>
+                        <section class="precoNovo preco">$140</section>
+                    </div>
                 </div>
-            </div>
-            <div class="produtoContainer">
-                <img src="../assets/img/feminino/15.jpg" alt="Pastel Long Sleeve" class="produtoImg">
-                <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
-                <section class="produtoNome">Casual Long Sleeve</section>
-                <div class="precoContainer">
-                    <section class="precoAntigo preco">$220</section>
-                    <section class="precoNovo preco">$140</section>
+                <div class="produtoContainer">
+                    <img src="../assets/img/feminino/15.jpg" alt="Pastel Long Sleeve" class="produtoImg">
+                    <img src="../assets/icons/Rating.png" alt="avalicação do produto" class="ratingImg">
+                    <section class="produtoNome">Casual Long Sleeve</section>
+                    <div class="precoContainer">
+                        <section class="precoAntigo preco">$220</section>
+                        <section class="precoNovo preco">$140</section>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <div class="categoriasFooter">
-            <section class="categoriaFooter">Feminino</section>
-            <section class="categoriaFooter">Masculino</section>
-            <section class="categoriaFooter">Infantil</section>
-            <section class="categoriaFooter">Promoções</section>
-            <section class="categoriaFooter">Suporte</section>
+        <div class="container-footer">
+            <nav>
+                <ul class="navbar-items">
+                    <li class="navbar-item"><a href="#">FEMININO</a></li>
+                    <li class="navbar-item"><a href="#">MASCULINO</a></li>
+                    <li class="navbar-item"><a href="#">INFANTIL</a></li>
+                    <li class="navbar-item"><a href="#">PROMOÇÕES</a></li>
+                    <li class="navbar-item"><a href="#">SUPORTE</a></li>
+                </ul>
+            </nav>
+
+            <p>&copy;2022 Fashionista. All Right Reserved</p>
         </div>
-        <section class="copyright">
-            &copy; 2022 Fashionista. All Rights Reserved.
-        </section>
     </footer>
+    <script src="./script/mobile-navbar.js"></script>
+    <script src="https://kit.fontawesome.com/06fd78b9bc.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
