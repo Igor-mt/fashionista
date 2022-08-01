@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/style-login.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/style-login.css" />
     <title>Login e Cadastro</title>
-</head>
+  </head>
 
-<body class="gradient-primary">
+  <body class="gradient-primary">
     <!-- navbar -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="index.html"> <img src="./assets/img/fashionista.png" alt=""></a>
+    <header>
+      <div class="navbar-container">
+        <a href="#home"
+          ><img
+            src="./assets/img/logo-fashionista.png"
+            class="logo"
+            alt="logo fashionista"
+        /></a>
+
+        <nav>
+          <ul class="navbar-items menu">
+            <li class="navbar-item"><a href="#">FEMININO</a></li>
+            <li class="navbar-item"><a href="#">MASCULINO</a></li>
+            <li class="navbar-item"><a href="#">INFANTIL</a></li>
+            <li class="navbar-item"><a href="#">PROMOÇÕES</a></li>
+          </ul>
+        </nav>
+
+        <div class="container-button">
+          <button class="btn-imagem" id="btn-pesquisa">
+            <img src="./assets/icons/search-icon.svg" alt="pesquisa" />
+          </button>
+
+          <button class="btn-imagem" id="btn-sacola">
+            <img src="./assets/icons/cart-icon.svg" alt="sacola" />
+          </button>
+
+          <button class="btn-branco btn-login" id="btn-login">LOGIN</button>
         </div>
-    </nav>
+      </div>
+    </header>
     <!-- navbar - fim -->
 
     <!-- Já sou cadastrado -->
-    <form class="form-user">
-
+    <div class="container-main">
+      <form class="form-user">
         <div class="cont-1">
-            <h2 class="cont-h2">Já sou cliente</h2>
+          <h2 class="cont-h2">Já sou cliente</h2>
         </div>
 
         <label class="form-group">CPF ou Email:</label>
@@ -31,19 +56,23 @@
         <label class="form-group">Senha:</label>
         <input class="form-control-user" type="password" name="f_senha" />
 
-        <input class="form-control-lembrar" type="checkbox" name="f_lembrar" /> Lembrar <br><br>
+        <input class="form-control-lembrar" type="checkbox" name="f_lembrar" />
+        Lembrar <br /><br />
         <a href="#" class="form-senha">Esqueci minha senha</a>
 
-        <input class="form-control-bottom" type="submit" name="btn_enviar" value="ACESSAR CONTA" />
+        <input
+          class="form-control-bottom"
+          type="submit"
+          name="btn_enviar"
+          value="ACESSAR CONTA"
+        />
+      </form>
+      <!-- Já sou cadastrado - Fim -->
 
-    </form>
-    <!-- Já sou cadastrado -->
-
-    <!-- Quero em Cadastrar -->
-    <form class="form-container">
-
+      <!-- Quero me Cadastrar -->
+      <form class="form-container">
         <div class="cont-1">
-            <h2 class="cont-h2">Quero me Cadastrar</h2>
+          <h2 class="cont-h2">Quero me Cadastrar</h2>
         </div>
 
         <label class="form-label">Nome:</label>
@@ -70,25 +99,30 @@
         <label class="form-label">Repita a Senha:</label>
         <input class="form-control" type="password" name="f_senha" />
 
-        <input class="form-control-bottom" type="submit" name="btn_enviar" value="CRIAR CONTA" />
-
-    </form>
-    <!-- Quero em Cadastrar - Fim -->
+        <input
+          class="form-control-bottom"
+          type="submit"
+          name="btn_enviar"
+          value="CRIAR CONTA"
+        />
+      </form>
+    </div>
+    <!-- Quero me Cadastrar - Fim -->
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <span class="footer-text">FEMININO</span>
-            <span class="footer-text">MASCULINO</span>
-            <span class="footer-text">INFANTIL</span>
-            <span class="footer-text">PROMOÇÕES</span>
-            <span class="footer-text">SUPORTE</span> <br><br><br>
-            <span class="footer-text-2">© 2022 Fashionista. All Right Reserved</span>
-        </div>
+      <div class="footer-container">
+        <span class="footer-text">FEMININO</span>
+        <span class="footer-text">MASCULINO</span>
+        <span class="footer-text">INFANTIL</span>
+        <span class="footer-text">PROMOÇÕES</span>
+        <span class="footer-text">SUPORTE</span> <br /><br /><br />
+        <span class="footer-text-2"
+          >© 2022 Fashionista. All Right Reserved</span
+        >
+      </div>
     </footer>
 
     <!-- Footer-fim-->
-
-</body>
-
+  </body>
 </html>
