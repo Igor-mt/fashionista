@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo</title>
+  <script src="https://kit.fontawesome.com/d87ce71830.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/catalogo.css">
+</head>
+
+<body>
+  <header>
+    <div class="navbar-container">
+      <a href="/index.html"><img src="/assets/img/logo-fashionista.png" class="logo" alt="logo fashionista"></a>
+
+      <nav>
+        <ul class="navbar-items menu">
+          <li class="navbar-item">
+            <a href="/pages/catalogo/feminino.html">FEMININO</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/pages/catalogo/masculino.html">MASCULINO</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/pages/catalogo/infantil.html">INFANTIL</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/pages/catalogo/promocoes.html">PROMOÇÕES</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="container-button">
+
+        <button class="btn-imagem" id="btn-pesquisa">
+          <img src="/assets/icons/search-icon.svg" alt="pesquisa">
+        </button>
+
+        <button class="btn-imagem" id="btn-sacola" onclick="window.location.href='/check-out.html';">
+          <img src="/assets/icons/cart-icon.svg" alt="sacola" />
+        </button>
+
+        <button class="btn-branco btn-login" id="btn-login" onclick="window.location.href='/login-cadastro.html';">
+          LOGIN
+        </button>
+
+      </div>
+
+      <!-- Menu Mobile -->
+
+      <div id="menuNav" class="overlay">
+        <a href="javascript:void(0)" class="btn-close" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+
+        <div class="container-overlay">
+          <ul class="navbar-items menu-mobile">
+            <li class="navbar-item">
+              <a href="/pages/catalogo/feminino.html">FEMININO</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/pages/catalogo/masculino.html">MASCULINO</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/pages/catalogo/infantil.html">INFANTIL</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/pages/catalogo/promocoes.html">PROMOÇÕES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Botão hamburguer  -->
+      <button class="btn-nav" id="btn-nav" onclick="openNav()">
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </button>
+
+    </div>
+  </header>
+  <main>
+    <div class="filter">
+      <div class="filterOptions">
+        <section class="precoFilter filterOption">+ PREÇO</section>
+        <section class="tamanhoFilter filterOption">+ TAMANHO</section>
+        <section class="marcaFilter filterOption">+ MARCA</section>
+        <section class="corFilter filterOption">- COR</section>
+      </div>
+      <div class="selectCor">
+        <section class="selectCorBox">Busca</section>
+        <div class="colorOptions">
+          <section class="amareloCor colorOption nonSelected">Amarelo</section>
+          <section class="azulCor colorOptionSelected">Azul</section>
+          <section class="vermelhoCor colorOption nonSelected">Vermelho</section>
+          <section class="pretoCor colorOption nonSelected">Preto</section>
+        </div>
+      </div>
+    </div>
+    <div class="produtos">
+      <div class="produtoContainer">
+        <button class="btn-produto" onclick="window.location.href='/produto/feminino.html';">
+          <img src="/assets/img/promocoes/02.jpg" alt="Roupa Feminina" class="produtoImg">
+        </button>
+        <img src="/assets/icons/rating.png" alt="avalicação do produto" class="ratingImg">
+        <section class="produtoNome">Roupa Feminina</section>
+        <div class="precoContainer">
+          <section class="precoAntigo preco">$220</section>
+          <section class="precoNovo preco">$140</section>
+        </div>
+      </div>
+
+      <div class="produtoContainer">
+        <button class="btn-produto" onclick="window.location.href='/produto/feminino.html';">
+          <img src="/assets/img/promocoes/03.jpg" alt="Roupa Feminina" class="produtoImg">
+        </button>
+        <img src="/assets/icons/rating.png" alt="avalicação do produto" class="ratingImg">
+        <section class="produtoNome">Roupa Feminina</section>
+        <div class="precoContainer">
+          <section class="precoAntigo preco">$220</section>
+          <section class="precoNovo preco">$140</section>
+        </div>
+      </div>
+
+      <div class="produtoContainer">
+        <button class="btn-produto" onclick="window.location.href='/produto/feminino.html';">
+          <img src="/assets/img/promocoes/04.jpg" alt="Roupa Feminina" class="produtoImg">
+        </button>
+        <img src="/assets/icons/rating.png" alt="avalicação do produto" class="ratingImg">
+        <section class="produtoNome">Roupa Feminina</section>
+        <div class="precoContainer">
+          <section class="precoAntigo preco">$220</section>
+          <section class="precoNovo preco">$140</section>
+        </div>
+      </div>
+
+      <div class="produtoContainer">
+        <button class="btn-produto" onclick="window.location.href='/produto/feminino.html';">
+          <img src="/assets/img/promocoes/06.jpg" alt="Roupa Masculina" class="produtoImg">
+        </button>
+        <img src="/assets/icons/rating.png" alt="avalicação do produto" class="ratingImg">
+        <section class="produtoNome">Roupa Masculina</section>
+        <div class="precoContainer">
+          <section class="precoAntigo preco">$220</section>
+          <section class="precoNovo preco">$140</section>
+        </div>
+      </div>
+
+      <div class="produtoContainer">
+        <button class="btn-produto" onclick="window.location.href='/produto/feminino.html';">
+          <img src="/assets/img/promocoes/07.jpg" alt="Roupa Feminina" class="produtoImg">
+        </button>
+        <img src="/assets/icons/rating.png" alt="avalicação do produto" class="ratingImg">
+        <section class="produtoNome">Roupa Feminina</section>
+        <div class="precoContainer">
+          <section class="precoAntigo preco">$220</section>
+          <section class="precoNovo preco">$140</section>
+        </div>
+      </div>
+
+      <div class="produtoContainer">
+        <button class="btn-produto" onclick="window.location.href='/produto/feminino.html';">
+          <img src="/assets/img/promocoes/08.jpg" alt="Roupa Masculina" class="produtoImg">
+        </button>
+        <img src="/assets/icons/rating.png" alt="avalicação do produto" class="ratingImg">
+        <section class="produtoNome">Roupa Masculina</section>
+        <div class="precoContainer">
+          <section class="precoAntigo preco">$220</section>
+          <section class="precoNovo preco">$140</section>
+        </div>
+      </div>
+
+      <div class="produtoContainer">
+        <button class="btn-produto" onclick="window.location.href='/produto/feminino.html';">
+          <img src="/assets/img/promocoes/10.jpg" alt="Roupa Masculina" class="produtoImg">
+        </button>
+        <img src="/assets/icons/rating.png" alt="avalicação do produto" class="ratingImg">
+        <section class="produtoNome">Roupa Masculina</section>
+        <div class="precoContainer">
+          <section class="precoAntigo preco">$220</section>
+          <section class="precoNovo preco">$140</section>
+        </div>
+      </div>
+
+      <div class="produtoContainer">
+        <button class="btn-produto" onclick="window.location.href='/produto/feminino.html';">
+          <img src="/assets/img/promocoes/09.jpg" alt="Roupa Masculina" class="produtoImg">
+        </button>
+        <img src="/assets/icons/rating.png" alt="avalicação do produto" class="ratingImg">
+        <section class="produtoNome">Roupa Masculina</section>
+        <div class="precoContainer">
+          <section class="precoAntigo preco">$220</section>
+          <section class="precoNovo preco">$140</section>
+        </div>
+      </div>
+
+      <div class="produtoContainer">
+        <button class="btn-produto" onclick="window.location.href='/produto/feminino.html';">
+          <img src="/assets/img/promocoes/11.jpg" alt="Roupa Infantil" class="produtoImg">
+        </button>
+        <img src="/assets/icons/rating.png" alt="avalicação do produto" class="ratingImg">
+        <section class="produtoNome">Roupa Infantil</section>
+        <div class="precoContainer">
+          <section class="precoAntigo preco">$220</section>
+          <section class="precoNovo preco">$140</section>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-footer">
+      <nav>
+        <ul class="navbar-items">
+          <li class="navbar-item">
+            <a href="/pages/catalogo/feminino.html">FEMININO</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/pages/catalogo/masculino.html">MASCULINO</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/pages/catalogo/infantil.html">INFANTIL</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/pages/catalogo/promocoes.html">PROMOÇÕES</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/login-cadastro.html">SUPORTE</a>
+          </li>
+        </ul>
+      </nav>
+
+      <p>&copy;2022 Fashionista. All Right Reserved</p>
+    </div>
+  </footer>
+  <script src="/script/mobile-navbar.js"></script>
+  <script src="https://kit.fontawesome.com/06fd78b9bc.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
