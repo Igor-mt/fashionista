@@ -1,97 +1,191 @@
 @import url('./reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Lato&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap');
 
 :root {
-    --grey: rgba(46, 46, 46, 1);
+  --grey: rgba(46, 46, 46, 1);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Header */
 
-header {
-    background-color: var(--grey);
-    height: 7rem;
-    width: 100%;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+i:hover {
+  color: #f9004d;
+}
+
+.logo {
+  margin-left: 1rem;
+  max-height: 63px;
+  height: 100%;
+  max-width: 236px;
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(46, 46, 46);
+  height: 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+header .navbar-items {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+}
+
+.navbar-items li {
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.navbar-items li:hover {
+  color: #f9004d;
+}
+
+.btn-login {
+  padding: 8px 20px;
+  font-size: 12px;
+}
+
+.btn-imagem {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn-imagem img {
+  width: 26px;
+  height: 28px;
+}
+
+.btn-imagem:hover {
+  transform: scale(1.05);
+}
+
+.btn-branco {
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 3px;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.btn-branco:hover {
+  background-color: #f9004d;
+}
+
+.btn-produto {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container-button {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.container-button button {
+  margin-left: 15px;
+}
+
+@media (max-width: 500px) {
+  /* Menu responsivo */
+  .navbar-items.menu-mobile li {
+    font-size: 1.2rem;
+  }
+
+  .btn-close {
+    font-size: 1.81rem;
+  }
+}
+
+/* Menu responsivo */
+.overlay {
+  width: 100%;
+  height: 0;
+  background-color: rgb(0, 0, 0, 0.9);
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: all 0.5s;
+}
+
+.container-overlay {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-items.menu-mobile {
+  display: block;
+}
+
+.navbar-items.menu-mobile li {
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+}
+
+.btn-close {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  padding: 20px 8px;
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.btn-nav {
+  display: none;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: #111;
+  margin: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 940px) {
+  /* Menu responsivo */
+  .btn-nav {
+    display: block;
+  }
+
+  .navbar-items.menu {
+    display: none;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+  main {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+  }
 
-header .logo {
-    height: 4rem;
-    margin-left: 2rem;
-}
+  /* Filtro */
 
-/* Menu */
-
-header .navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
-    font-family: Lato, Arial;
-    font-weight: 600;
-    color: #fff;
-}
-
-header .navbar li {
-    margin: 1.5rem;
-    font-size: 12pt;
-    cursor: pointer;
-    opacity: 0.8;
-}
-
-header .navbar li:focus {
-    text-decoration: underline;
-}
-
-header .navbar li:hover {
-    opacity: 1;
-    transition-property: opacity;
-    transition-duration: 0.5s;
-}
-
-header .navicons {
-    display: flex;
-    align-items: center;
-    margin-right: 2rem;
-}
-
-header .icon {
-    height: 1.8rem;
-    margin: 0.8rem;
-    cursor: pointer;
-    opacity: 0.8;
-}
-
-header .icon:hover {
-    opacity: 1;
-    transition: .1s ease-in-out;
-}
-
-header .loginBtn {
-    margin: 0.8rem;
-    padding: 0.5rem 1.2rem 0.5rem 1.2rem;
-    cursor: pointer;
-    background: var(--grey);
-    color: #fff;
-    border: 1px solid #fff;
-}
-
-header .loginBtn:hover{
-    background-position: 100% 50%;
-    background: #fff;
-    color: var(--grey);
-    transition: color .2s ease;
-
-}
-
-main {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-/* Filtro */
-
-main .filter {
+  main .filter {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,30 +193,31 @@ main .filter {
     margin-top: 3rem;
     font-family: Lato;
     font-size: 12pt;
-}
+  }
 
-main .filterOptions {
+  main .filterOptions {
     display: flex;
     flex-direction: column;
     text-align: left;
     width: 140px;
-}
+  }
 
-main .filterOption {
+  main .filterOption {
     cursor: pointer;
     padding-left: 20%;
     font-weight: 900;
     margin-bottom: 0.8rem;
     padding-bottom: 0.3rem;
     border-bottom: 1px solid rgba(46, 46, 46, 0.3);
-}
+  }
 
-main .filterOption:hover {
+  main .filterOption:hover {
     transition: 0.3s ease-in-out;
     transform: scale(1.1);
-}
+    color: #f9004d;
+  }
 
-main .selectCorBox {
+  main .selectCorBox {
     border: 1px solid var(--grey);
     border-radius: 5px;
     width: 140px;
@@ -132,33 +227,34 @@ main .selectCorBox {
     padding-right: 2rem;
     opacity: 0.7;
     text-align: left;
-}
+  }
 
-main .selectCorBox::after {
-    content: "▼";
+  main .selectCorBox::after {
+    content: '▼';
     font-size: 8pt;
     margin-left: 4rem;
-}
+  }
 
-main .colorOptions {
+  main .colorOptions {
     text-align: center;
     border-bottom: 1px solid rgba(46, 46, 46, 0.3);
     padding-bottom: 0.8rem;
-}
+  }
 
-main .colorOption {
+  main .colorOption {
     margin-top: 0.5rem;
     font-weight: 400;
     width: 140px;
     cursor: pointer;
-}
+  }
 
-main .colorOption:hover{
+  main .colorOption:hover {
     transform: scale(1.1);
     transition: 0.3s ease-in-out;
-}
+    color: #f9004d;
+  }
 
-main .colorOptionSelected {
+  main .colorOptionSelected {
     margin-top: 0.4rem;
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
@@ -168,16 +264,17 @@ main .colorOptionSelected {
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
-}
+    color: #f9004d;
+  }
 
-main .colorOptionSelected:hover{
+  main .colorOptionSelected:hover {
     transform: scale(1.1);
     transition: 0.3s ease-in-out;
-}
+  }
 
-/* Produtos */
+  /* Produtos */
 
-main .produtos {
+  main .produtos {
     display: grid;
     grid-template-columns: repeat(3, 18rem);
     grid-template-rows: repeat(4, 20rem);
@@ -185,103 +282,269 @@ main .produtos {
     grid-row-gap: 0px;
     width: 80%;
     margin-top: 3rem;
-    /* margin-left: 8rem; */
     margin-bottom: 3rem;
-}
+  }
 
-/* Produto Individual */
+  /* Produto Individual */
 
-main .produtoContainer {
+  main .produtoContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    transition: all .2s ease-in-out;
-}
+    transition: all 0.2s ease-in-out;
+  }
 
-main .produtoContainer:hover {
+  main .produtoContainer:hover {
     transform: scale(0.95);
-}
+  }
 
-main .produtoImg {
+  main .produtoImg {
     width: 15rem;
     height: 14.375rem;
     object-fit: cover;
-}
+  }
 
-/* Nota do Produto */
+  /* Nota do Produto */
 
-main .ratingImg {
+  main .ratingImg {
     margin-top: 0.5rem;
     margin-bottom: 0.6rem;
     height: 14px;
     width: 105px;
-}
+  }
 
-/* Nome do Produto */
+  /* Nome do Produto */
 
-main .produtoNome {
+  main .produtoNome {
     font-family: 'Frank Ruhl Libre', serif;
     font-weight: 700;
     margin-bottom: 0.6rem;
-}
+  }
 
-/* Preço do Produto */
+  /* Preço do Produto */
 
-main .precoContainer {
+  main .precoContainer {
     display: flex;
-}
+  }
 
-main .precoContainer .preco {
+  main .precoContainer .preco {
     font-family: 'Lato', sans-serif;
     font-size: 10pt;
     font-weight: bold;
-}
+  }
 
-main .precoContainer .precoAntigo {
+  main .precoContainer .precoAntigo {
     opacity: 0.6;
     text-decoration: line-through;
     margin-right: 0.313rem;
+    color: rgba(194, 10, 10, 0.2);
+  }
+}
+
+/* Mobile */
+@media (max-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Filtro */
+
+  main .filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+    font-family: Lato;
+    font-size: 12pt;
+  }
+
+  main .filterOptions {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 140px;
+  }
+
+  main .filterOption {
+    cursor: pointer;
+    padding-left: 20%;
+    font-weight: 900;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid rgba(46, 46, 46, 0.3);
+  }
+
+  main .filterOption:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+    color: #f9004d;
+  }
+
+  main .selectCorBox {
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    width: 140px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    opacity: 0.7;
+    text-align: left;
+  }
+
+  main .selectCorBox::after {
+    content: '▼';
+    font-size: 8pt;
+    margin-left: 4rem;
+  }
+
+  main .colorOptions {
+    text-align: center;
+    border-bottom: 1px solid rgba(46, 46, 46, 0.3);
+    padding-bottom: 0.8rem;
+  }
+
+  main .colorOption {
+    margin-top: 0.5rem;
+    font-weight: 400;
+    width: 140px;
+    cursor: pointer;
+  }
+
+  main .colorOption:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    color: #f9004d;
+  }
+
+  main .colorOptionSelected {
+    margin-top: 0.4rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    width: 140px;
+    font-weight: 400;
+    background-color: var(--grey);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #f9004d;
+  }
+
+  main .colorOptionSelected:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+  }
+
+  /* Produtos */
+
+  main .produtos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  /* Produto Individual */
+
+  main .produtoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+  }
+
+  main .produtoContainer:hover {
+    transform: scale(0.95);
+  }
+
+  main .produtoImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+
+  /* Nota do Produto */
+
+  main .ratingImg {
+    margin-top: 0.5rem;
+    margin-bottom: 0.6rem;
+    height: 14px;
+    width: 105px;
+  }
+
+  /* Nome do Produto */
+
+  main .produtoNome {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+  }
+
+  /* Preço do Produto */
+
+  main .precoContainer {
+    display: flex;
+  }
+
+  main .precoContainer .preco {
+    font-family: 'Lato', sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+  }
+
+  main .precoContainer .precoAntigo {
+    opacity: 0.6;
+    text-decoration: line-through;
+    margin-right: 0.313rem;
+    color: rgba(194, 10, 10, 0.2);
+  }
 }
 
 /* Footer */
 
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 10rem;
-    width: 100%;
-    background-color: var(--grey);
-    font-family: Lato, Arial;
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  height: 150px;
+  background-color: rgb(46, 46, 46);
+  width: 100%;
 }
 
-footer .categoriasFooter {
-    display: flex;
-    width: 60%;
-    margin-top: 1rem;
-    justify-content: space-evenly;
-    text-transform: uppercase;
-    color: #fff;
-    cursor: pointer;
-    font-weight: 600;
-    opacity: 0.8;
+.container-footer .nav {
+  width: 100%;
 }
 
-footer .categoriaFooter{
-    opacity: 0.8;
+.container-footer .navbar-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
 }
 
-footer .categoriaFooter:hover{
-    opacity: 1;
-    transition-property: opacity;
-    transition-duration: 0.5s;
+.container-footer .navbar-item {
+  padding: 0.3rem;
 }
 
-footer .copyright {
-    color: #fff;
-    font-size: 10pt;
-    opacity: 0.6;
-    margin-top: 0.8rem;
+.container-footer p {
+  color: #fff;
+  font-size: 8px;
 }
