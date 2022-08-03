@@ -27,6 +27,7 @@ body {
 }
 
 .logo {
+  margin-left: 6rem;
   max-height: 63px;
   height: 100%;
   max-width: 236px;
@@ -104,7 +105,7 @@ body {
   gap: 4rem;
 }
 
-.container-main .container-cadastro{
+.container-main .container-cadastro {
   padding: 62px 0;
 }
 
