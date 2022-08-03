@@ -20,6 +20,7 @@ i:hover {
 }
 
 .logo {
+  margin-left: 1rem;
   max-height: 63px;
   height: 100%;
   max-width: 236px;
@@ -33,23 +34,21 @@ i:hover {
   background-color: rgb(46, 46, 46);
   height: 100px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 1000;
 }
 
-.navbar-items {
+header .navbar-items {
   display: flex;
   list-style: none;
+  gap: 4.5rem;
 }
 
 .navbar-items li {
-  margin-left: 30px;
   font-size: 14px;
   color: #fff;
   cursor: pointer;
   transition: all 0.5s ease;
+  /* gap: 4.5rem; */
 }
 
 .navbar-items li:hover {
