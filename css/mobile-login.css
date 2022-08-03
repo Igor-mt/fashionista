@@ -1,0 +1,18 @@
+@media(max-width:890px){
+    .container-main {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .divider {
+        top: calc(48% - 0px / 2 + 0px);
+        transform: rotate(0deg);
+    }
+    
+}
+
+@media(max-width:380px){
+    .container-main .container-cadastro{
+        padding: 103px 0;
+    }
+}
