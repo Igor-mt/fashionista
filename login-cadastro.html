@@ -4,124 +4,125 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/style-login.css" />
+    <link rel="stylesheet" href="/css/style-login.css" />
+    <link rel="stylesheet" href="./css/mobile-login.css">
     <title>Login e Cadastro</title>
   </head>
 
-  <body class="gradient-primary">
+  <body>
     <!-- navbar -->
     <header>
       <div class="navbar-container">
-        <a href="#home"
+        <a href="/index.html"
           ><img
             src="./assets/img/logo-fashionista.png"
             class="logo"
             alt="logo fashionista"
         /></a>
-
-        <nav>
-          <ul class="navbar-items menu">
-            <li class="navbar-item"><a href="#">FEMININO</a></li>
-            <li class="navbar-item"><a href="#">MASCULINO</a></li>
-            <li class="navbar-item"><a href="#">INFANTIL</a></li>
-            <li class="navbar-item"><a href="#">PROMOÇÕES</a></li>
-          </ul>
-        </nav>
-
-        <div class="container-button">
-          <button class="btn-imagem" id="btn-pesquisa">
-            <img src="./assets/icons/search-icon.svg" alt="pesquisa" />
-          </button>
-
-          <button class="btn-imagem" id="btn-sacola">
-            <img src="./assets/icons/cart-icon.svg" alt="sacola" />
-          </button>
-
-          <button class="btn-branco btn-login" id="btn-login">LOGIN</button>
-        </div>
       </div>
     </header>
     <!-- navbar - fim -->
 
     <!-- Já sou cadastrado -->
     <div class="container-main">
-      <form class="form-user">
-        <div class="cont-1">
-          <h2 class="cont-h2">Já sou cliente</h2>
-        </div>
+      <div class="container-login">
+        <section>
+          <div class="title">
+            <h2 class="title">Já sou cliente</h2>
+          </div>
 
-        <label class="form-group">CPF ou Email:</label>
-        <input class="form-control-user" type="text" name="f_nome" />
+          <form class="form-user" action="/check-out.html">
+            <label class="form-group" for="form-control-user"
+              >CPF ou Email:</label
+            >
+            <input id="form-control-user" type="text" name="f_nome" />
 
-        <label class="form-group">Senha:</label>
-        <input class="form-control-user" type="password" name="f_senha" />
+            <label class="form-group" for="form-control-password">Senha:</label>
+            <input id="form-control-password" type="password" name="f_senha" />
 
-        <input class="form-control-lembrar" type="checkbox" name="f_lembrar" />
-        Lembrar <br /><br />
-        <a href="#" class="form-senha">Esqueci minha senha</a>
+            <a href="#" class="form-senha">Esqueci minha senha</a>
 
-        <input
-          class="form-control-bottom"
-          type="submit"
-          name="btn_enviar"
-          value="ACESSAR CONTA"
-        />
-      </form>
+            <button type="submit" class="button" id="btn-acessarConta">ACESSAR CONTA</button>
+
+          </form>
+        </section>
+      </div>
       <!-- Já sou cadastrado - Fim -->
 
       <!-- Quero me Cadastrar -->
-      <form class="form-container">
-        <div class="cont-1">
-          <h2 class="cont-h2">Quero me Cadastrar</h2>
-        </div>
+      <div class="container-cadastro">
+        <section>
+          <form class="form-container" action="/check-out.html">
+            <div class="title">
+              <h2 class="title">Quero me cadastrar</h2>
+            </div>
 
-        <label class="form-label">Nome:</label>
-        <input class="form-control" type="text" name="f_nome" />
+            <label class="form-label">Nome:</label>
+            <input class="form-control" type="text" name="f_nome" />
 
-        <label class="form-label">Sobrenome:</label>
-        <input class="form-control" type="text" name="f_sobrenome" />
+            <label class="form-label">Sobrenome:</label>
+            <input class="form-control" type="text" name="f_sobrenome" />
 
-        <label class="form-label">Email:</label>
-        <input class="form-control" type="email" name="f_email" />
+            <label class="form-label">Email:</label>
+            <input class="form-control" type="email" name="f_email" />
 
-        <label class="form-label">Sexo:</label>
-        <input class="form-control" type="text" name="f_sexo" />
+            <label class="form-label">Sexo:</label>
+            <input class="form-control" type="text" name="f_sexo" />
 
-        <label class="form-label">Telefone:</label>
-        <input class="form-control" type="text" name="f_telefone" />
+            <label class="form-label">Telefone:</label>
+            <input class="form-control" type="text" name="f_telefone" />
 
-        <label class="form-label">Nascimento:</label>
-        <input class="form-control" type="date" name="f_nascimento" />
+            <label class="form-label">Nascimento:</label>
+            <input class="form-control" type="date" name="f_nascimento" />
 
-        <label class="form-label">Senha:</label>
-        <input class="form-control" type="password" name="f_senha" />
+            <label class="form-label">Senha:</label>
+            <input class="form-control" type="password" name="f_senha" />
 
-        <label class="form-label">Repita a Senha:</label>
-        <input class="form-control" type="password" name="f_senha" />
+            <label class="form-label">Repita a Senha:</label>
+            <input class="form-control" type="password" name="f_senha" />
 
-        <input
-          class="form-control-bottom"
-          type="submit"
-          name="btn_enviar"
-          value="CRIAR CONTA"
-        />
-      </form>
+            <button type="button" class="button" id="btn-criarConta">CRIAR CONTA</button>
+
+          </form>
+        </section>
+      </div>
     </div>
     <!-- Quero me Cadastrar - Fim -->
 
-    <!-- Footer -->
+    <div class="divider"></div>
+
     <footer class="footer">
-      <div class="footer-container">
-        <span class="footer-text">FEMININO</span>
-        <span class="footer-text">MASCULINO</span>
-        <span class="footer-text">INFANTIL</span>
-        <span class="footer-text">PROMOÇÕES</span>
-        <span class="footer-text">SUPORTE</span> <br /><br /><br />
-        <span class="footer-text-2"
-          >© 2022 Fashionista. All Right Reserved</span
-        >
+      <div class="container-footer">
+        <nav>
+          <ul class="navbar-items">
+            <li class="navbar-item">
+              <a href="/pages/catalogo/feminino.html">FEMININO</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/pages/catalogo/masculino.html">MASCULINO</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/pages/catalogo/infantil.html">INFANTIL</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/pages/catalogo/promocoes.html">PROMOÇÕES</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/login-cadastro.html">SUPORTE</a>
+            </li>
+          </ul>
+        </nav>
+
+        <p>&copy;2022 Fashionista.All Right Reserved</p>
       </div>
     </footer>
+
+    <script src="./script/mobile-navbar.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/06fd78b9bc.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Footer-fim-->
   </body>

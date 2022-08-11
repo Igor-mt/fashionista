@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check-out</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/check-out.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar-container">
+        <a href="/index.html"
+          ><img
+            src="/assets/img/logo-fashionista.png"
+            class="logo"
+            alt="logo fashionista"
+        /></a>
+      </div>
+    </header>
+
+    <main class="checkout-container" id="checkout-container">
+      <div class="content-payment" id="content-payment">
+        <section>
+          <div class="title">
+            <h2 class="title">Forma de pagamento</h2>
+          </div>
+
+          <div class="type-payment">
+            <div class="login-container">
+              <p>Já possui cadastro?</p>
+              <a class="button login" href="/login-cadastro.html"
+                >Identifique-se</a
+              >
+            </div>
+
+            <div class="payment-container">
+              <div class="payment-options">
+                <input
+                  type="radio"
+                  id="pay-card"
+                  name="payment"
+                  value="pay-card"
+                  checked
+                />
+                <label for="pay-card">
+                  <img src="/assets/icons/cartoes.png" alt="" />
+                </label>
+              </div>
+
+              <div class="payment-options">
+                <input type="radio" id="pix" name="payment" value="pix" />
+                <label for="pix">
+                  <img src="/assets/icons/pix.png" alt="" />
+                </label>
+              </div>
+
+              <div class="payment-options">
+                <input type="radio" id="ticket" name="payment" value="ticket" />
+                <label for="ticket">
+                  <img src="/assets/icons/boleto.png" alt="" />
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <form action="">
+            <label for="card-number">Número do cartão</label><br />
+            <input type="text" name="card-number" id="card-number" /><br />
+
+            <label for="name">Nome do titular</label><br />
+            <input type="text" name="name" id="name" /><br />
+
+            <div class="content-card">
+              <div class="content-expiry">
+                <label for="card-expiry-month">Validade</label><br />
+                <select class="select" name="card-expiry-month">
+                  <option value="jan">Janeiro</option>
+                  <option value="fev">Fevereiro</option>
+                  <option value="mar">Março</option>
+                  <option value="abr">Abril</option>
+                  <option value="mai">Maio</option>
+                  <option value="jun">Junho</option>
+                  <option value="jul">Julho</option>
+                  <option value="ago">Agosto</option>
+                  <option value="set">Setembro</option>
+                  <option value="out">Outubro</option>
+                  <option value="nov">Novembro</option>
+                  <option value="dez">Dezembro</option>
+                </select>
+
+                <select class="select" name="card-expiry-year">
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                </select>
+              </div>
+
+              <div class="content-card-code">
+                <label for="card-code">Código de segurança</label><br />
+                <input
+                  type="password"
+                  name="card-code"
+                  id="card-code"
+                  maxlength="3"
+                /><br />
+              </div>
+            </div>
+
+            <label for="installments">Número de parcelas</label><br />
+            <select class="installments" name="installments">
+              <option value="2">2 x de R$ 0,00</option>
+              <option value="4">4 x de R$ 0,00</option>
+              <option value="6">6 x de R$ 0,00</option>
+              <option value="8">8 x de R$ 0,00</option>
+              <option value="10">10 x de R$ 0,00</option>
+              <option value="12">12 x de R$ 0,00</option>
+            </select>
+          </form>
+        </section>
+      </div>
+
+      <div class="divider-2"></div>
+      <div class="divider"></div>
+      
+
+      <div class="content-delivery" id="content-delivery">
+        <section>
+          <div class="title">
+            <h2 class="title">Dados para entrega</h2>
+          </div>
+
+          <div class="type-delivery">
+            <div class="cep-container">
+              <label for="cep">CEP</label><br />
+              <input type="text" name="cep" id="cep" /><br />
+            </div>
+
+            <div class="delivery-container">
+              <div class="delivery-options">
+                <input
+                  type="radio"
+                  id="pay-card"
+                  name="delivery"
+                  value="pay-card"
+                  checked
+                />
+                <label for="pay-card"> <strong>SEDEX:</strong> R$50,00 </label>
+              </div>
+
+              <div class="delivery-options">
+                <input type="radio" id="pix" name="delivery" value="pix" />
+                <label for="pix">
+                  <strong>Encomenda PAC:</strong> R$50,00
+                </label>
+              </div>
+
+              <div class="delivery-options">
+                <input
+                  type="radio"
+                  id="ticket"
+                  name="delivery"
+                  value="ticket"
+                />
+                <label for="ticket">
+                  <strong>Transportadora:</strong> R$50,00
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <form action="">
+            <label for="card-number">Endereço</label><br />
+            <input type="text" name="card-number" id="card-number" /><br />
+
+            <div class="input-group">
+              <div class="complemento">
+                <label for="complemento">Complemento</label><br />
+                <input type="text" name="complemento" id="complemento" /><br />
+              </div>
+
+              <div class="numero">
+                <label for="num">Número</label><br />
+                <input type="text" name="num" id="num" /><br />
+              </div>
+            </div>
+
+            <div class="address-container">
+              <div>
+                <label for="bairro">Bairro</label><br />
+                <input type="text" name="bairro" id="bairro" /><br />
+
+                <label for="card-expiry-month">Estado</label><br />
+                <select class="select-delivery" name="card-expiry-month">
+                  <option value="jan">Goiás</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="ref">Referência</label><br />
+                <input type="text" name="ref" id="ref" /><br />
+
+                <label for="card-expiry-month">Cidade</label><br />
+                <select class="select-delivery" name="card-expiry-month">
+                  <option value="jan">Goiânia</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="content-summary" id="content-summary">
+        <section>
+          <div class="title">
+            <h2 class="title">Resumo da compra</h2>
+          </div>
+
+          <div class="summary-container">
+            <ul>
+              <li>
+                <div class="card">
+                  <img src="/assets/img/feminino/01.jpg" alt="" />
+                  <div class="text">
+                    <p><h3>Roupa Feminina</h3></p>
+                    <p><strong>Cod:</strong> 00000</p>
+                    <p><strong>Quantidade:</strong> 2</p>
+                    <p><strong>Valor Unitário:</strong> R$ 140,00</p>
+                  </div>
+                  <div class="value">
+                    <p><strong>R$ 280,00</strong></p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="card">
+                  <img src="/assets/img/feminino/02.jpg" alt="" />
+                  <div class="text">
+                    <p><h3>Roupa Feminina</h3></p>
+                    <p><strong>Cod:</strong> 00000</p>
+                    <p><strong>Quantidade:</strong> 2</p>
+                    <p><strong>Valor Unitário:</strong> R$ 140,00</p>
+                  </div>
+                  <div class="value">
+                    <p><strong>R$ 280,00</strong></p>
+                  </div>
+                </div>
+              </li>
+              
+              <li>
+                <div class="card">
+                  <img src="/assets/img/feminino/04.jpg" alt="" />
+                  <div class="text">
+                    <p><h3>Roupa Feminina</h3></p>
+                    <p><strong>Cod:</strong> 00000</p>
+                    <p><strong>Quantidade:</strong> 2</p>
+                    <p><strong>Valor Unitário:</strong> R$ 140,00</p>
+                  </div>
+                  <div class="value">
+                    <p><strong>R$ 280,00</strong></p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="card">
+                  <img src="/assets/img/feminino/05.jpg" alt="" />
+                  <div class="text">
+                    <p><h3>Roupa Feminina</h3></p>
+                    <p><strong>Cod:</strong> 00000</p>
+                    <p><strong>Quantidade:</strong> 2</p>
+                    <p><strong>Valor Unitário:</strong> R$ 140,00</p>
+                  </div>
+                  <div class="value">
+                    <p><strong>R$ 280,00</strong></p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="card-value">
+                  <div class="text">
+                    <p><strong>Quantidade total produtos: </strong> 8</p>
+                    <p><strong>Desconto: </strong> 10%</p>
+                    <p><strong>Valor total: </strong> R$ 1.120,00</p>
+                  </div>
+                  <div class="value">
+                    <p><strong>R$ 1.008,00</strong></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="summary-button">
+            <button
+              class="btn-summary"
+              onclick="window.location.href='/index.html';"
+            >
+              Finalizar compra
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div id="container-footer" class="container-footer">
+        <nav>
+          <ul class="navbar-items">
+            <li class="navbar-item">
+              <a href="/pages/catalogo/feminino.html">FEMININO</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/pages/catalogo/masculino.html">MASCULINO</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/pages/catalogo/infantil.html">INFANTIL</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/pages/catalogo/promocoes.html">PROMOÇÕES</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/login-cadastro.html">SUPORTE</a>
+            </li>
+          </ul>
+        </nav>
+
+        <p>&copy;2022 Fashionista.All Right Reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
