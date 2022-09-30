@@ -1,49 +1,43 @@
-# Hackadev
+# Hackadev - Fashionista
 
-## O que é:
+## ❓ O que é:
 
-Projeto prático em grupo de longo prazo que vai simular ambiente das empresas.
+Projeto prático em grupo de longo prazo que vai simular ambiente das empresas durante a construção de um e-commerce.
 
-## Papel do Monitor:
+## Membros do Grupo
 
-Liderar equipe.
+- Lucas Santana (Líder da 3° Fase) - https://github.com/LukSantana | https://www.linkedin.com/in/luksantana/
+- Gustavo Araújo - https://github.com/Gustavo-Ae | https://www.linkedin.com/in/gustavoae/
+- Davi Silveira - https://github.com/Kayzwk | https://www.linkedin.com/in/kayzwk/
+- Pedro Paulo - https://github.com/pp-gomes | https://www.linkedin.com/in/pp-gomes/
 
-## Como vai funcionar:
+## Ex-Membros do Grupo
 
-Iremos criar desafios faseados de um mesmo projeto.
-Ex:
+- Igor Matheus (Líder da 2° Fase) - https://github.com/Igor-mt | https://www.linkedin.com/in/igor-matheus-lopes-de-lima-800788163/
+- Jodair Neves (Líder da 1° Fase) - https://github.com/jodairneves | | https://www.linkedin.com/in/jodair-neves-55268017b/
 
-1. Criação de telas.
-2. Criação de chat de atendimento.
-3. Comunicação com banco de dados…
+## 💻 Construção da aplicação:
 
-## Objetivo
+- Criação de telas utilizando apenas HTML, CSS e Javascript.
 
-Avaliar a capacidade de trabalho em equipe; Estimular Soft Skills; Auxiliar no desenvolvimento técnico; Possibilitar que monitores nos ajudem na avaliação dos alunos; Simular o ambiente das empresas;
+## 👨‍💻👩‍💻 Tecnologias
+- HTML
+- CSS
+- Javascript
 
-## Fashionista E-commerce
+## 🎯 Objetivo
 
-![Fashionista E-commerce](./docs/images/01.png)
+Estimular o trabalho em grupo, comunicação e organização. Auxiliar no desenvolvimento das habilidades técnicas. Simular ambiente de trabalho em uma empresa.
 
-## Cenário
+## 📝 Regras
 
-Segundo o levantamento, da Webshoppers (Ebit / Nielsen), os e-commerces brasileiros faturaram cerca de R$ 53,2 bilhões em 2018.
-O segmento "Moda e Acessórios" representa 5,6% do faturamento no varejo online, ocupando a segunda posição entre as categorias de produtos com mais pedidos, perdendo apenas para o segmento de eletroeletrônicos.
-Oferecer a melhor experiência aos usuários que interagem com os produtos no desktop, e principalmente em dispositivos móveis, é fundamental para se manter vivo e competitivo nesse segmento.
-
-## Regras
-
-- Deve implementar as funcionalidades apresentadas nos wireframes / layouts.
+- Deve-se implementar todas funcionalidades pedidas em cada fase.
 - Deve ser mobile first, possuindo uma experiência satisfatória tanto em mobile quanto em desktop.
-- Deve consumir a API do catálogo de produtos.
-- O estado global da aplicação deverá ser gerenciado com Redux.
 - Deve ser um SPA (Single Page Application).
-- Todos os produtos da API devem ser exibidos.
-- Utilize BEM CSS para escrever os estilos.
 - Deve-se fazer deploy do projeto, servindo-o no Netlify.
 - Não utilize frameworks CSS como Bootstrap, Foundation e afins.
 
-## Requisitos obrigatórios
+## ❗ Requisitos obrigatórios
 
 - Para cada item do catálogo de produtos as seguintes informações devem estar na página:
   - Imagem
@@ -57,76 +51,12 @@ Oferecer a melhor experiência aos usuários que interagem com os produtos no de
 - Deve ser possível visualizar os itens adicionados no carrinho de compras, exibindo imagem, nome, preço e quantidade.
 - Deve ser possível remover itens do carrinho de compras.
 
-## Requisitos opcionais
+## 📁 Deploy
 
-- O carrinho de compras deve persistir entre reloads de página.
-- Alguns produtos não tem todos os tamanhos disponíveis, mostre apenas os tamanhos disponíveis em estoque.
-- Implemente a funcionalidade de busca em tempo real.
+A recomendação é para que o deploy seja feito no Netlify ou similar para o Front-End e Heroku ou similar para o back-end.
 
-## Endpoint - Catálogo de Produtos
+## 🗃 Links de organização 
 
-- https://5f074b869c5c250016306cbf.mockapi.io/api/v1/catalog
-
-### Propriedades de um produto (referência):
-
-```json
-{
-  "name": "Nome do produto",
-  "style": "Código de categoria",
-  "code_color": "Código de categoria + código de cor",
-  "color_slug": "slug da cor do produto",
-  "color": "Nome da cor do produto",
-  "on_sale": "booleano - Se o produto está em promoção",
-  "regular_price": "preço sem promoção",
-  "actual_price": "preço com promoção",
-  "discount_percentage": "% de desconto da promoção",
-  "installments": "quantidade de parcelas",
-  "sizes": [
-    {
-      "available": "booleano - indica se o tamanho está disponível",
-      "size": "nome do tamanho",
-      "sku": "código do produto + código do tamanho (para adicionar no carrinho)"
-    }
-  ]
-}
-```
-
-## Deploy
-
-A recomendação é para que o deploy seja feito no netilify (gratuito) ou serviço similar - https://www.netlify.com/
-
-## Layouts
-
-Os layouts abaixo servem de referência visual das funcionalidades, sintam-se livres para segui-las ou implementá-las com base em outras referências, desde que atenda às regras e aos requisitos obrigatórios.
-
-### Referência Navegável
-
-- https://viniciusvinna.netlify.app/react-fashionista
-
-### Página de cadastro
-
-![Página de cadastro](./docs/images/02.png)
-
-### Home (catálogo)
-
-![Home (catálogo)](./docs/images/03.png)
-
-### Página do produto
-
-![Página do produto](./docs/images/04.png)
-
-### Indicador de produtos no ícone do carrinho
-
-![Indicador de produtos no ícone do carrinho](./docs/images/05.png)
-
-### Carrinho de compras aberto
-
-![Carrinho de compras aberto](./docs/images/06.png)
-
-### Busca em tempo real
-
-![Busca em tempo real](./docs/images/07.png)
-
-### Checkout
-
-![Checkout](./docs/images/08.png)
+- Aplicação no Netlify: https://fashionista-hackadev-v1.netlify.app
+- Aplicação v2 (React, NodeJS) no Netlify: https://fashionista-hackadev.netlify.app
+- Layout no Figma: https://www.figma.com/file/hVS7dnhOhsgdaSw1zi57pL/Fashionista-E-commerce?node-id=0%3A1
